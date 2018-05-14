@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--MainPage - Created by: Andrew Huynh - Last Updated: May 13, 2018-->
+<!--The page where users land when successfully logged in-->
+<!--This can be the home page of a website or an application, a beginning of a process-->
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LoginTemplate"
+             x:Class="LoginTemplate.MainPage">
+    <StackLayout>
+        <Label Text="You have successfully logged in!" HorizontalTextAlignment="Center"/>
+        <Button x:Name="BtnLogout" Text="Logout" Clicked="BtnLogoutClicked"/>
+    </StackLayout>
+</ContentPage>

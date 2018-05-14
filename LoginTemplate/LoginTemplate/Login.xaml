@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Login - Created by: Andrew Huynh - Last Updated: May 13, 2018-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginTemplate.Login"
+             Title="Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--For the username input-->
+            <Label x:Name="LblUserMsg" Text="Enter username"/>
+            <Entry x:Name="EntUser" Text="{Binding Username}" Placeholder="Enter username" PlaceholderColor="LightGray"/>
+            
+            <!--For the password input-->
+            <Label x:Name="LblPassMsg" Text="Enter password"/>
+            <Entry x:Name="EntPass" Text="{Binding Password}" Placeholder="Enter password" PlaceholderColor="LightGray"/>
+            
+            <!--Our buttons-->
+            <Label x:Name="LblErrMsg" TextColor="Red" Text="Invalid Username or Password" IsVisible="False"/>
+            <Button x:Name="BtnLogin" Text="Login" Clicked="BtnLoginClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
