@@ -12,7 +12,7 @@
             
             <!--For the password input-->
             <Label x:Name="LblPassMsg" Text="Enter password"/>
-            <Entry x:Name="EntPass" Text="{Binding Password}" Placeholder="Enter password" PlaceholderColor="LightGray"/>
+            <Entry x:Name="EntPass" IsPassword="true" Text="{Binding Password}" Placeholder="Enter password" PlaceholderColor="LightGray"/>
             
             <!--Our buttons-->
             <Label x:Name="LblErrMsg" TextColor="Red" Text="Invalid Username or Password" IsVisible="False"/>
